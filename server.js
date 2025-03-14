@@ -13,6 +13,7 @@ app.use(express.json());
 // auth routes
 app.use('/api/auth', require('./routes/auth'));
 
+app.use('/api/playlist', require('./routes/playlist'));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
